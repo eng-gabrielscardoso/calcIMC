@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Require meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Seo meta tags -->
+    <meta name="author" content="Gabriel Santos Cardoso">
+    <meta name="description" content="Calculadora de Índice de Massa Corporal - IMC online feita com HTML5, CSS3 e Javascript">
+    <meta name="keywords" content="calculadora, imc, online">
+    <meta name="robots" content="index, follow">
+    <!-- External links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Title -->
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper-content">
+        <div class="container">
+            <header>
+                <h1>Calculadora IMC</h1><hr>
+            </header>
+            <main>
+                <form action="" method="" id="form">
+                    <div class="group-form">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name" placeholder="Ex.: Gabriel Santos Cardoso" >
+                    </div>
+                    <div class="group-form">
+                        <label for="height">Altura (em m):</label>
+                        <input type="text" name="height" id="height" placeholder="Ex.: 1.60" >
+                    </div>
+                    <div class="group-form">
+                        <label for="weight">Peso (em kg):</label>
+                        <input type="text" name="weight" id="weight" placeholder="Ex.: 55.5" >
+                    </div>
+                    <div class="alert"><span>* utilize ponto (.) para separar casas decimais se necessário</span></div>
+                    <input type="submit" value="Calcular" id="submit">
+                </form>
+                <div class="res" id="res"></div>
+            </main>
+            <footer>
+                <hr>
+                <p><b>&copy; Gabriel Santos Cardoso
+                    <br><span id="current"></span></b></p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- External scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>

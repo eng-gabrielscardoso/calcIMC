@@ -1,0 +1,124 @@
+@font-face{
+    src: url('../assets/Oswald.ttf');
+    font-family: 'Oswald';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald';
+}
+
+html,body{
+    height: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, rgb(5, 89, 138), rgb(62, 14, 139));
+}
+
+.wrapper-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 600px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    -webkit-box-shadow: 14px 13px 5px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 13px 5px -3px rgba(0,0,0,0.75);
+    box-shadow: 14px 13px 5px -3px rgba(0,0,0,0.75);
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+h1,hr,label,p,span{
+    color: #000000;
+}
+
+header{
+    padding-top: 20px;
+}
+
+header h1{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+main{
+    padding-top: 10px;
+}
+
+main form{
+    text-align: center;
+}
+
+main form .group-form{
+    width: 100%;
+    padding: 5px 2%;
+    text-align: left;
+}
+
+main form .group-form input{
+    width: 100%;
+    height: 33px;
+    padding-left: 8px;
+    outline: 0;
+    border: 0;
+    background-color: #ebebeb;
+}
+
+main form .alert span{
+    font-size: 11px;
+}
+
+main form input[type=submit]{
+    width: 80%;
+    height: 33px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    font-size: 23px;
+    background-image: linear-gradient(to bottom right, rgb(5, 89, 138), rgb(62, 14, 139));  
+    border: 0;
+    transition: 0.4s;
+}
+
+main form input[type=submit]:hover{
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+main .res{
+    width: 100%;
+    min-height: 80px;
+    padding: 2% 2%;
+    background-color: #ebebeb;
+}
+
+footer{
+    padding-top: 30px;
+}
+
+footer p{
+    padding: 10px;
+    text-align: center;
+}
+
+/* Medias queries */
+@media screen and (max-width: 768px){
+    .wrapper-content{
+        max-width: 400px; 
+    }
+}
+
+@media screen and (max-width: 456px){
+    .wrapper-content{
+        max-width: 300px;
+    }
+}
