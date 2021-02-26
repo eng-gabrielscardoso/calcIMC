@@ -82,6 +82,7 @@ main form input[type=submit]{
     height: 33px;
     margin-top: 10px;
     margin-bottom: 15px;
+    cursor: pointer;
     color: #FFFFFF;
     font-size: 23px;
     background-image: linear-gradient(to bottom right, rgb(5, 89, 138), rgb(62, 14, 139));  
@@ -90,6 +91,7 @@ main form input[type=submit]{
 }
 
 main form input[type=submit]:hover{
+    cursor: pointer;
     text-decoration: underline;
     transition: 0.4s;
 }
